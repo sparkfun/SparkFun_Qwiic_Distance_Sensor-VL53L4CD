@@ -20173,7 +20173,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="DISTANCE">
 <packages>
-<package name="VL53L4X">
+<package name="VL53L4CX">
 <description>&lt;h3&gt;LGA-12 - 12 pin LGA package for the V53L1x&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 12&lt;/li&gt;
@@ -20249,7 +20249,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="VL53L4X">
+<symbol name="VL53L4CX">
 <description>&lt;h3&gt;STMicroelectronics VL53L1X - 400 cm IR Laser ToF Sensor&lt;/h3&gt;
 &lt;p&gt;VL53L1X is a state-of-the-art ToF laser-ranging sensor, enhancing the ST FlightSense product family. It is the fastest miniature ToF sensor currently on the market with accurate ranging up to 4 m and fast ranging frequency (up to 50 Hz). Housed in a miniature and reflowable package, it integrates a single photon avalanche diode (SPAD) receiving array, a 940 nm invisible laser Class 1 emitter, physical infrared filters, and optics to achieve the best ranging performance in various ambient lighting conditions with a range of cover window options.&lt;/p&gt;</description>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -20268,13 +20268,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VL53L4X" prefix="U">
+<deviceset name="VL53L4CX" prefix="U">
 <description>&lt;h3&gt;STMicroelectronics VL53L4X - IR Laser ToF Sensor&lt;/h3&gt;</description>
 <gates>
-<gate name="G$1" symbol="VL53L4X" x="0" y="0"/>
+<gate name="G$1" symbol="VL53L4CX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="VL53L4X">
+<device name="" package="VL53L4CX">
 <connects>
 <connect gate="G$1" pin="!INT" pad="7"/>
 <connect gate="G$1" pin="!SHUT" pad="5"/>
@@ -20339,13 +20339,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U1" library="DISTANCE" deviceset="VL53L4X" device=""/>
+<part name="U1" library="DISTANCE" deviceset="VL53L4CX" device=""/>
 <part name="J7" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP7" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP8" library="SparkFun" deviceset="STAND-OFF" device=""/>
-<part name="JP10" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="INT"/>
+<part name="PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="INT"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_4MM"/>
 </parts>
@@ -20357,13 +20357,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="91.44" y="106.68" size="1.778" layer="97" font="vector">7-bit unshifted I2C address: 0x29</text>
 <text x="160.02" y="149.86" size="1.778" layer="97" font="vector">Clear Jumper to remove 
 I2C Pull-ups from bus</text>
-<text x="121.92" y="165.1" size="1.778" layer="97" font="vector">Clear jumper JP9 to remove 
-pull-up from INT</text>
-<text x="122.428" y="35.306" size="1.778" layer="97" font="vector">Power</text>
+<text x="121.92" y="165.1" size="1.778" layer="97" font="vector">Clear INT jumper to remove pullup
+resistors.</text>
 <wire x1="0" y1="93.98" x2="248.92" y2="93.98" width="0.1524" layer="97" style="longdash"/>
 <text x="45.974" y="86.106" size="2.54" layer="94" font="vector" align="center">Connectors</text>
 <text x="120.65" y="177.292" size="2.54" layer="94" font="vector" align="center">Distance Sensor: VL53L4CX</text>
-<text x="105.156" y="140.462" size="1.778" layer="97" font="vector">VCC: 2.3V-3.5V</text>
+<text x="103.886" y="172.466" size="1.778" layer="97" font="vector">VCC Range: 2.3V-3.5V</text>
 <text x="180.34" y="7.62" size="2.54" layer="94" font="vector" align="center">Revised By: Elias Santistevan</text>
 </plain>
 <instances>
@@ -20401,7 +20400,7 @@ pull-up from INT</text>
 <attribute name="VALUE" x="86.36" y="114.3" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="J2" gate="G$1" x="38.1" y="53.34" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="43.18" y="48.006" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="60.96" y="48.006" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="43.18" y="61.214" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="GND6" gate="1" x="27.94" y="45.72" smashed="yes">
@@ -20415,13 +20414,13 @@ pull-up from INT</text>
 <attribute name="VALUE" x="27.94" y="35.814" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="J4" gate="G$1" x="38.1" y="25.4" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="43.18" y="20.066" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="60.96" y="20.066" size="1.778" layer="96" font="vector" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="43.18" y="33.274" size="1.778" layer="95" font="vector" rot="MR0"/>
 </instance>
 <instance part="GND8" gate="1" x="27.94" y="17.78" smashed="yes">
 <attribute name="VALUE" x="25.4" y="15.24" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="LOGO1" gate="G$1" x="228.6" y="45.72" smashed="yes"/>
+<instance part="LOGO1" gate="G$1" x="210.82" y="45.72" smashed="yes"/>
 <instance part="R1" gate="G$1" x="137.16" y="137.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="135.636" y="137.16" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="138.684" y="137.16" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -20489,11 +20488,11 @@ pull-up from INT</text>
 </instance>
 <instance part="JP7" gate="G$1" x="243.84" y="30.48" smashed="yes"/>
 <instance part="JP8" gate="G$1" x="243.84" y="27.94" smashed="yes"/>
-<instance part="JP10" gate="G$1" x="116.84" y="25.4" smashed="yes" rot="R90">
-<attribute name="VALUE" x="122.682" y="29.464" size="1.778" layer="96" font="vector" rot="R180"/>
+<instance part="PWR" gate="G$1" x="116.84" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="121.158" y="27.94" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="LOGO2" gate="G$1" x="157.48" y="33.02" smashed="yes"/>
-<instance part="LOGO3" gate="G$1" x="149.86" y="40.64" smashed="yes"/>
+<instance part="LOGO2" gate="G$1" x="138.43" y="32.766" smashed="yes"/>
+<instance part="LOGO3" gate="G$1" x="235.458" y="40.64" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -20590,7 +20589,7 @@ pull-up from INT</text>
 <pinref part="J7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="JP10" gate="G$1" pin="1"/>
+<pinref part="PWR" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="116.84" y1="20.32" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
 </segment>
@@ -20711,7 +20710,7 @@ pull-up from INT</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="JP10" gate="G$1" pin="2"/>
+<pinref part="PWR" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="116.84" y1="30.48" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 </segment>
