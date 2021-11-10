@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -6107,6 +6107,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="16.891" y="8.89" extent="1-16" drill="0.3048"/>
 <via x="17.653" y="14.732" extent="1-16" drill="0.3048"/>
 <via x="15.621" y="16.256" extent="1-16" drill="0.3048"/>
+<via x="11.811" y="14.605" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="SCL">
 <contactref element="J2" pad="4"/>
