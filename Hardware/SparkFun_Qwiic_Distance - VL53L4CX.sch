@@ -20285,7 +20285,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VCC" pad="1 11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16332" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -5969,6 +5969,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="U1" library="DISTANCE" package="VL53L4CX" value="VL53L4CX" x="12.7" y="12.7" smashed="yes">
 <attribute name="NAME" x="10.25" y="14.45" size="0.508" layer="25" font="vector"/>
+<attribute name="PROD_ID" value="IC-16332" x="12.7" y="12.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.25" y="10.45" size="0.508" layer="27" font="vector"/>
 </element>
 <element name="J7" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="6.35" y="1.27" smashed="yes">
