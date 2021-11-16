@@ -1501,7 +1501,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="DISTANCE">
 <packages>
-<package name="VL53L4CX">
+<package name="VL53L4CD">
 <description>&lt;h3&gt;LGA-12 - 12 pin LGA package for the V53L1x&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 12&lt;/li&gt;
@@ -5984,7 +5984,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="DESIGNER" value="" x="-16.51" y="-16.51" size="1.778" layer="27" display="off"/>
 <attribute name="REV" value="" x="-16.51" y="-16.51" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U1" library="DISTANCE" package="VL53L4CX" value="VL53L4CX" x="12.7" y="12.7" smashed="yes">
+<element name="U1" library="DISTANCE" package="VL53L4CD" value="VL53L4CD" x="12.7" y="12.7" smashed="yes">
 <attribute name="NAME" x="10.25" y="14.45" size="0.508" layer="25" font="vector"/>
 <attribute name="PROD_ID" value="IC-16332" x="12.7" y="12.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.25" y="10.45" size="0.508" layer="27" font="vector"/>

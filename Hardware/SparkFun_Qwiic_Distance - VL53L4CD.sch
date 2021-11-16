@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20173,7 +20173,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="DISTANCE">
 <packages>
-<package name="VL53L4CX">
+<package name="VL53L4CD">
 <description>&lt;h3&gt;LGA-12 - 12 pin LGA package for the V53L1x&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 12&lt;/li&gt;
@@ -20249,7 +20249,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <symbols>
-<symbol name="VL53L4CX">
+<symbol name="VL53L4CD">
 <description>&lt;h3&gt;STMicroelectronics VL53L1X - 400 cm IR Laser ToF Sensor&lt;/h3&gt;
 &lt;p&gt;VL53L1X is a state-of-the-art ToF laser-ranging sensor, enhancing the ST FlightSense product family. It is the fastest miniature ToF sensor currently on the market with accurate ranging up to 4 m and fast ranging frequency (up to 50 Hz). Housed in a miniature and reflowable package, it integrates a single photon avalanche diode (SPAD) receiving array, a 940 nm invisible laser Class 1 emitter, physical infrared filters, and optics to achieve the best ranging performance in various ambient lighting conditions with a range of cover window options.&lt;/p&gt;</description>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -20268,13 +20268,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VL53L4CX" prefix="U">
-<description>&lt;h3&gt;STMicroelectronics VL53L4X - IR Laser ToF Sensor&lt;/h3&gt;</description>
+<deviceset name="VL53L4CD" prefix="U">
+<description>&lt;h3&gt;STMicroelectronics VL53L4D - IR Laser Distance Sensor&lt;/h3&gt;</description>
 <gates>
-<gate name="G$1" symbol="VL53L4CX" x="0" y="0"/>
+<gate name="G$1" symbol="VL53L4CD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="VL53L4CX">
+<device name="" package="VL53L4CD">
 <connects>
 <connect gate="G$1" pin="!INT" pad="7"/>
 <connect gate="G$1" pin="!SHUT" pad="5"/>
@@ -20341,7 +20341,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U1" library="DISTANCE" deviceset="VL53L4CX" device=""/>
+<part name="U1" library="DISTANCE" deviceset="VL53L4CD" device=""/>
 <part name="J7" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_NO_POP"/>
 <part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
